@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="48" id="KGk-i7-Jjw" customClass="SwitchTableViewCell" customModule="MapEX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQb-jl-qML">
+                        <rect key="frame" x="16" y="13.666666666666664" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4z-zb-8Sc">
+                        <rect key="frame" x="255" y="8" width="51" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="SBn-N9-YuH"/>
+                            <constraint firstAttribute="width" constant="49" id="agb-UQ-XNK"/>
+                        </constraints>
+                        <connections>
+                            <action selector="switchChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="ELL-hi-pps"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W4z-zb-8Sc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="34b-V9-7Wv"/>
+                    <constraint firstAttribute="trailing" secondItem="W4z-zb-8Sc" secondAttribute="trailing" constant="16" id="S95-75-3qn"/>
+                    <constraint firstItem="uQb-jl-qML" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dSz-lS-CtV"/>
+                    <constraint firstItem="uQb-jl-qML" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nFY-iu-ffv"/>
+                    <constraint firstAttribute="bottom" secondItem="W4z-zb-8Sc" secondAttribute="bottom" constant="8" id="pz4-UH-Bit"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="boolSwitch" destination="W4z-zb-8Sc" id="KZL-DF-rR2"/>
+                <outlet property="titleLabel" destination="uQb-jl-qML" id="t7d-Jl-PMr"/>
+            </connections>
+            <point key="canvasLocation" x="94.656488549618317" y="-10.563380281690142"/>
+        </tableViewCell>
+    </objects>
+</document>

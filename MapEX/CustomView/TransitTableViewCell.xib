@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TransitTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransitTableViewCell" id="KGk-i7-Jjw" customClass="TransitTableViewCell" customModule="MapEX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnK-NT-UhG">
+                        <rect key="frame" x="8" y="22" width="8" height="22"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="JMN-Zs-AEf"/>
+                            <constraint firstAttribute="width" constant="8" id="glj-54-rym"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OyK-as-KwV">
+                        <rect key="frame" x="8" y="0.0" width="8" height="22"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="ttC-OA-EYb"/>
+                            <constraint firstAttribute="width" constant="8" id="uni-nQ-f3E"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJk-yK-I87">
+                        <rect key="frame" x="32" y="4.6666666666666679" width="60" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="brL-dV-PMw"/>
+                            <constraint firstAttribute="height" constant="35" id="i3h-u3-UI0"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="tinted" title="詳細"/>
+                        <connections>
+                            <action selector="detailButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BQG-Kd-YLx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTH-u8-hKq">
+                        <rect key="frame" x="271" y="4.6666666666666679" width="33" height="35"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="gray" title="?"/>
+                        <connections>
+                            <action selector="questionButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sJK-xc-YNl"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OyK-as-KwV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6wv-il-8Ba"/>
+                    <constraint firstItem="QnK-NT-UhG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HMJ-QE-1vP"/>
+                    <constraint firstItem="OyK-as-KwV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Ppv-K4-hfY"/>
+                    <constraint firstAttribute="bottom" secondItem="QnK-NT-UhG" secondAttribute="bottom" id="b0X-81-9LR"/>
+                    <constraint firstAttribute="trailing" secondItem="mTH-u8-hKq" secondAttribute="trailing" constant="16" id="bBn-qA-7V1"/>
+                    <constraint firstItem="TJk-yK-I87" firstAttribute="leading" secondItem="QnK-NT-UhG" secondAttribute="trailing" constant="16" id="kop-sx-b55"/>
+                    <constraint firstItem="TJk-yK-I87" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lIq-SO-4B7"/>
+                    <constraint firstItem="mTH-u8-hKq" firstAttribute="centerY" secondItem="TJk-yK-I87" secondAttribute="centerY" id="yB3-Rv-akj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detailButton" destination="TJk-yK-I87" id="Zww-Ln-OLu"/>
+            </connections>
+            <point key="canvasLocation" x="-2" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
