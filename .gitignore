@@ -1,0 +1,14 @@
+# Xcode
+.DS_Store
+.idea/
+.vscode/
+build/
+DerivedData/
+xcuserdata/
+*.xccheckout
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/
+
+# CocoaPods
+Pods/
